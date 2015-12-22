@@ -10,5 +10,6 @@ input_1.txt is an example input file
 
 To Run:
   Download all files and compile using Makefile
-  $ ./drawing <name of txt file> <name of picture file>
-  example: ./drawing input_1.txt output.pgm
+  
+  
+  example run: ./drawing input_1.txt output.pgm

@@ -1,3 +1,5 @@
+Project from NC State Class
+
 Reads from a .txt file.  Creates a graph of 255 X 255 and produces a pixel grayscale image within the graph.  Saves the graph to .pgm
 
 Example input file - input.txt

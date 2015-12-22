@@ -6,9 +6,9 @@ l x1 y1 x2 y2 100 //l means draw a line from coordinates x1,y1 to x2,y2 with the
 
 c cx cy 5 100 //c means draw a circle around coordinates cx,cy with a radius of 5 in the color hue of 100
 
-input_1.txt is lan example input file
+input_1.txt is an example input file
 
 To Run:
   Download all files and compile using Makefile
   $ ./drawing <name of txt file> <name of picture file>
-  example: ./drawing input.txt output.pgm
+  example: ./drawing input_1.txt output.pgm

@@ -13,6 +13,7 @@ Creates a graph of 255 X 255 and opens a requested .txt file.  The .txt file wil
 
 ##To Run:
    1. Download all files in the program
-   2. open your terminal and cd into the folder that contains all drawer files
-   3. enter into the command line ./drawing <name of input file.txt> <name of output file .pgm>   
+   2. Open your terminal and cd into the folder that contains all drawer files
+   3. Type into the command line "make" to compile the program.
+   4. Enter into the command line ./drawing <name of input file.txt> <name of output file .pgm>   
       example run: ./drawing input.txt output.pgm

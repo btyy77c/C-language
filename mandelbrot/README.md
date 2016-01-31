@@ -30,7 +30,7 @@ m_expected_1.txt is an example of the output file.
 
 Run with a .txt file
    1. Enter into your terminal ./mandelbrot < {name of .txt file} >| output.txt
-   Example: ./mandelbrot < m_input_1.txt >| output.txt
+   -Example: ./mandelbrot < m_input_1.txt >| output.txt
 
 Run without a .txt file
    1. Enter into the terminal ./mandelbrot

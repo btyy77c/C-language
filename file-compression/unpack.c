@@ -46,7 +46,7 @@ int main( int argc, char *argv[] )
   //Create wordList for our "dictionary"
   WordList *wordList = readWordList( wordFile );
 
-  //Open file for readin.  Procduces error if file cannot open.
+  //Open file for reading.  Procduces error if file cannot open.
   if ( ( input = fopen( argv[ 1 ], "r" ) ) == NULL  ){
     fprintf(stderr, "Can't open file: %s\n", argv[ 1 ] );
     fprintf(stderr, "usage: unpack <compressed.raw> <output.txt> [word_file.txt]\n" );

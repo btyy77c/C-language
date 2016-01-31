@@ -2,14 +2,14 @@
 
 ##Project from NC State Class
 
-Reads from a .txt file.  Creates a graph of 255 X 255 and produces a pixel grayscale image within the graph.  Saves the graph to a .pgm file 
+Creates a graph of 255 X 255 and opens a requested .txt file.  The .txt file will have a list of line and circle commands the program will use to draw lines and circles on the graph. After all lines and circles have been added, the program will save the graph as a .pgm file.
 
-Example input file - input.txt
+##Example drawing commands that would be included in the .txt file: 
+   l x1 y1 x2 y2 100 //means draw a line (l) from coordinates x1,y1 to coordinates x2,y2 with the color hue of 100
 
-##Example commands for the drawing: 
-   l x1 y1 x2 y2 100 //l means draw a line from coordinates x1,y1 to x2,y2 with the color hue of 100
-
-   c cx cy 5 100 //c means draw a circle around coordinates cx,cy with a radius of 5 in the color hue of 100
+   c cx cy 5 100 //means draw a circle (c) around the point cx,cy with a radius of 5 in the color hue of 100
+   
+   An example .txt file is also included and is labeled "input.txt"
 
 ##To Run:
    1. Download all files in the program

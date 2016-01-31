@@ -8,15 +8,15 @@ The program uses a file called "words.txt" to create an array of common English 
 
 This "word array" will be used to compare to the .txt file that needs to be compressed. 
 
-After the "word array" is created, it will run through a given .txt file to begin the compression process.  The program will read each word/letter/punctuation in the given .txt file and index it according to what is matches on the "word array". Once the word is matched, it's "word array" index number is added to another array.  In the end, you would have an array of numbers that matched an index from the "word array" to a word/letter/puncuation found on the given .txt file. 
+After the "word array" is created, it will run through a given .txt file to begin the compression process.  The program will read each word/letter/punctuation in the given .txt file and index it according to what it matches on the "word array". Once the word is matched, it's "word array" index number is added to another array.  In the end, you would have an array of numbers that matched an index from the "word array" to a word/letter/puncuation found on the given .txt file. 
 
-   For example, if the word array was ['the', 'of', ' '(space)], and the .txt file was 'of of the of', then the final array would be [1(of), 2(space), 1(of), 2(space), 0(the), 2(space), 1(of)]. 
+   *For example, if the word array was ['the', 'of', ' '(space)], and the .txt file was 'of of the of', then the final array would be [1, 2, 1, 2, 0, 2, 1]. 
 
 The "word list" is used to ensure one indexed item requires no more than 7 binary bits of storage.  A byte can hold 8 bits so there is an extra 1 bit of memory not being used when the first word is indexed.  This is where the compression fun begins. 
 
-The first word byte is created and added to the array.  The next word that is indexed will also only have 7 bits. To save memory, the program will remove the first binary bit and add it to the previous word. This means the new item is added with only 6 bits of it's byte included.
+The first word byte is created and added to the array.  The next word that is indexed will also only have 7 bits. To save memory, the program will remove the first binary bit from word 2 and add it to word 1. Now, word1 includes 8 bits and word2 includes 6 bits. 
 
-The 3rd word is going to follow the same process.  2 bits of it's binary code are removed and added to the previous byte in the array (remember, the 2nd word only had 6 bits).  The new word is then added to the array with only 5 bits included. 
+The 3rd word is going to follow the same process.  2 bits of it's binary code are removed and added to the previous byte in the array (remember, the 2nd word only had 6 bits).  The new word is then added to the array with only 5 bits included. Now, word2 has 8 bits and word3 has 5 bits. 
 
 This process continues on until the program reaches the end of the .txt file.  In the end, the array would not look like the example I used above.  Instead, you have a messy bunch of squished together binary bits that the computer can't read.  The program then saves this messy array as a .raw file.  
 

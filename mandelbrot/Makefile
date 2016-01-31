@@ -2,13 +2,11 @@ CC = gcc
 CFLAGS = -g -Wall -std=c99
 LDLIBS = -lm
 
-all: comments mandelbrot
-
-comments: comments.o
+all: mandelbrot
 
 mandelbrot: mandelbrot.o
 
 clean:
 	rm -f output.txt
-	rm -f comments mandelbrot
-	rm -f comments.o mandelbrot.o
+	rm -f mandelbrot
+	rm -f mandelbrot.o

@@ -29,9 +29,9 @@ m_expected_1.txt is an example of the output file.
    4. Add any .txt files you want to the same folder.  This program can run from the terminal so adding a .txt file is not required.
 
    Run with a .txt file
-   5. Enter into your terminal ./mandelbrot < {name of .txt file} >| output.txt
+   1 . Enter into your terminal ./mandelbrot < {name of .txt file} >| output.txt
    Example: ./mandelbrot < m_input_1.txt >| output.txt
 
    Run without a .txt file
-   5. Enter into the terminal ./mandelbrot
-   6. Enter numbers into Minimum real, Minimum imaginary, and size.
+   1. Enter into the terminal ./mandelbrot
+   2. Enter numbers into Minimum real, Minimum imaginary, and size.
